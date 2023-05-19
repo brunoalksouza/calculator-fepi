@@ -8,11 +8,7 @@ body {
   align-items: center;
   flex-direction: column;
 
-  background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.8)
-  );
+  background-color: rgba(128, 128, 128, 0.767);
   min-height: 100vh;
 }
 
@@ -52,6 +48,7 @@ input[type="button"] {
 input[type="button"]:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   font-weight: bold;
+  transition: 150ms;
 }
 
 input[type="tel"] {
