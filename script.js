@@ -1,6 +1,13 @@
-function abreJanela() {
-  alert(document.querySelector("h1").textContent);
-}
+document.addEventListener("DOMContentLoaded", function () {
+  var inputTelefone = document.querySelector("input[type=tel]");
 
-const botoes = (document.querySelectorAll("input[type=button]").onclick =
-  abreJanela);
+  var teclas = document.querySelectorAll(".teclado input[type=button]");
+
+  teclas.forEach(function (tecla) {
+    tecla.addEventListener("click", function () {
+      var numero = this.value;
+
+      inputTelefone.value += numero;
+    });
+  });
+});
